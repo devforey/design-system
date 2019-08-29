@@ -1,0 +1,140 @@
+.btn {
+    min-width: 64px;
+    height: 36px;
+    padding: 0 16px;
+
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    cursor: pointer;
+    outline: 0;
+    opacity: 0.9;
+
+    transition: box-shadow 150ms ease;
+}
+
+.btn:not([disabled]):not(.disabled):hover {
+    opacity: 1;
+}
+
+.btn[disabled], .btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.btn:focus {
+    box-shadow: 0 0 4px 1px black;
+}
+
+.btn--primary {
+    background: darkblue;
+    color: white;
+    border: 1px solid darkblue;
+}
+
+.btn--primary:focus {
+    box-shadow: 0 0 4px 1px darkblue;
+}
+
+.btn--outline {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn--outline:focus {
+    border: 1px solid gray;
+}
+
+.btn--outline-primary {
+    background: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+.btn--outline-primary:focus {
+    box-shadow: 0 0 4px 1px darkblue;
+}
+
+.btn--text {
+    background: none;
+    color: black;
+    border: 0;
+}
+
+.btn--text:focus {
+    box-shadow: 0 0 4px 1px gray;
+}
+
+.btn--text:hover {
+    text-decoration: underline;
+}
+
+.btn--text-primary {
+    background: none;
+    color: darkblue;
+    border: 0;
+}
+
+.btn--text-primary:focus {
+    box-shadow: 0 0 4px 1px darkblue;
+}
+
+.btn--text-primary:hover {
+    text-decoration: underline;
+}
+
+.btn--text-white {
+    background: none;
+    color: white;
+    border: 0;
+}
+
+.btn--text-white:hover {
+    text-decoration: underline;
+}
+
+.btn--text-white:focus {
+    box-shadow: 0 0 4px 1px white;
+}
+
+.l-btn-page__section {
+    padding: 10px;
+}
+
+.l-btn-page__divider {
+    height: 1px;
+    background: lightgray;
+    width: 100%;
+}
+
+.l-btn-horz-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.l-btn-horz-list .btn {
+    margin-right: 10px;
+}
+
+.l-btn-horz-list .btn:last-child {
+    margin-right: 0;
+}
+
+.l-btn-vert-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.l-btn-vert-list .btn {
+    margin-bottom: 10px;
+}
+
+.l-btn-vert-list .btn:last-child {
+    margin-bottom: 0;
+}

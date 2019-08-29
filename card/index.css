@@ -1,0 +1,52 @@
+/* Base */
+.card {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Modifiers */
+.card--bordered {
+    border: 1px solid gray;
+}
+
+.card--elevated {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Sub objects */
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.card__title--bordered {
+    border-bottom: 1px solid gray;
+}
+
+.card__body {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.l-card-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-card-list .card {
+    margin-bottom: 10px;
+}
+
+.l-card-inline-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.l-card-inline-list .card {
+    margin-right: 10px;
+}
+
+.l-card-inline-list--block .card {
+    flex: 1 1 100%;
+}
